@@ -43,6 +43,10 @@ g++ -std=c++2a -O3 -g0 sendeventall.cpp
 
 ```sh
 ./a.out /dev/input/event3 KEY_H:ud:1#KEY_E:ud:0#KEY_L:ud:0#KEY_L:ud:0#KEY_O:ud:0
+
+or 
+
+
 ./a.out /dev/input/event3 35:ud:1#18:ud:0#38:ud:0#38:ud:0#24:ud:0
 ```
 
