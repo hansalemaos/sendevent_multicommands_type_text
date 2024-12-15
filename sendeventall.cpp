@@ -1065,7 +1065,7 @@ static int execute_sendevent(std::string &device_to_open, std::vector<std::pair<
     int fd;
     int ret;
     int version;
-    struct input_event event{};
+    // struct input_event event{};
     fd = open(device_to_open.c_str(), O_RDWR);
     if (fd < 0)
     {
