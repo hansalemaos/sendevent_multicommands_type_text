@@ -4,6 +4,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <fstream>
+#include <getopt.h>
 #include <iostream>
 #include <ranges>
 #include <stdint.h>
@@ -12,20 +13,11 @@
 #include <string.h>
 #include <string>
 #include <string_view>
+#include <sys/ioctl.h>
+#include <unistd.h>
 #include <unordered_map>
 #include <utility>
 #include <vector>
-
-#include <errno.h>
-#include <fcntl.h>
-#include <getopt.h>
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <string>
-#include <sys/ioctl.h>
-#include <unistd.h>
 
 const std::unordered_map<std::string_view, int16_t> all_label_key{{"KEY_RESERVED", 0},
                                                                   {"KEY_ESC", 1},
@@ -1048,7 +1040,6 @@ typedef struct input_event
 #define EVIOCRMFF _IOW('E', 0x81, int)                    /* Erase a force effect */
 #define EVIOCGEFFECTS _IOR('E', 0x84, int)                /* Report number of effects playable at the same time */
 #define EVIOCGRAB _IOW('E', 0x90, int)                    /* Grab/Release device */
-// end <linux/input.h>
 static constexpr input_event sync_event{{0, 0}, 0, 0, 0};
 static constexpr std::pair<input_event, int64_t> sync_event_no_sleep{{{0, 0}, 0, 0, 0}, 0};
 static constexpr std::string_view up_down_event{"ud"};
