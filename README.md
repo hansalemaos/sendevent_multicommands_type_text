@@ -56,7 +56,7 @@ or
 # Tokens are split by "#"
 
 KEY_H or 35 -> keycode "h" (all key codes are available in the source code [linux standard] )
-ud -> up and down event - press and release
+ud -> up and down events - press and release
 1 -> sleep 1 ms 
 ```
 
@@ -64,7 +64,7 @@ ud -> up and down event - press and release
 
 ```sh
 KEY_E or 18 -> keycode "e" 
-ud -> up and down event  - press and release
+ud -> up and down events  - press and release
 0 -> sleep 0 ms 
 
 Console (stderr) output:
@@ -111,7 +111,7 @@ d -> down event
 KEY_H:ud:1
 
 KEY_H -> press and release "h"
-ud -> up and down event 
+ud -> up and down events 
 1 -> sleep 1 ms 
 
 KEY_LEFTSHIFT:u:1
