@@ -51,16 +51,16 @@ g++ -std=c++2a -O3 -g0 sendeventall.cpp
 ```sh
 # Tokens are split by "#"
 
-KEY_H or 35 -> press "h" (all key codes are available in the source code [linux standard] )
-ud -> up and down event 
+KEY_H or 35 -> keycode "h" (all key codes are available in the source code [linux standard] )
+ud -> up and down event - press and release
 1 -> sleep 1 ms 
 ```
 
 #### Explanation - Token: KEY_E:ud:0 / 18:ud:0
 
 ```sh
-KEY_E or 18 -> press "e" 
-ud -> up and down event 
+KEY_E or 18 -> keycode "e" 
+ud -> up and down event  - press and release
 0 -> sleep 0 ms 
 
 Console (stderr) output:
