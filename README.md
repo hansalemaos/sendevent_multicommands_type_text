@@ -60,7 +60,7 @@ sendkeycmd = create_sendkey_command(
 )
 print(sendkeycmd)
 
-# output:
+# output command, can be used with subprocess or directly in the adb/termux shell:
 /data/data/com.termux/files/home/sendevent_multicommands_type_text/a.out /dev/input/event1 KEY_LEFTSHIFT:d:0#KEY_T:ud:1#KEY_LEFTSHIFT:u:0#KEY_H:ud:1#KEY_I:ud:1#KEY_S:ud:3#KEY_SPACE:ud:2#KEY_I:ud:1#KEY_S:ud:3#KEY_SPACE:ud:1#KEY_A:ud:1#KEY_SPACE:ud:1#KEY_LEFTSHIFT:d:0#KEY_T:ud:3#KEY_LEFTSHIFT:u:0#KEY_E:ud:2#KEY_S:ud:1#KEY_T:ud:2#KEY_LEFTSHIFT:d:0#KEY_1:ud:3#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_1:ud:1#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_1:ud:3#KEY_LEFTSHIFT:u:0#KEY_SPACE:ud:2#KEY_LEFTSHIFT:d:0#KEY_R:ud:1#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_E:ud:3#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_A:ud:1#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_L:ud:2#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_L:ud:1#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_Y:ud:3#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_1:ud:3#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_1:ud:1#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_1:ud:3#KEY_LEFTSHIFT:u:0
 
 ```
