@@ -49,7 +49,7 @@ or
 ./a.out /dev/input/event3 35:ud:1#18:ud:0#38:ud:0#38:ud:0#24:ud:0
 ```
 
-### or the Python wrapper
+### or the [Python wrapper](https://github.com/hansalemaos/sendevent_multicommands_type_text/blob/main/pythonwrapper.py)
 ```py
 sendkeycmd = create_sendkey_command(
     exefile="/data/data/com.termux/files/home/sendevent_multicommands_type_text/a.out",
