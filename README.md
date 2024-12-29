@@ -46,9 +46,25 @@ g++ -std=c++2a -O3 -g0 sendeventall.cpp
 
 or 
 
-
 ./a.out /dev/input/event3 35:ud:1#18:ud:0#38:ud:0#38:ud:0#24:ud:0
 ```
+
+### or the Python wrapper
+```py
+sendkeycmd = create_sendkey_command(
+    exefile="/data/data/com.termux/files/home/sendevent_multicommands_type_text/a.out",
+    device_path="/dev/input/event1",
+    text="This is a Test!!! REALLY!!!",
+    min_time_key_press=1,
+    max_time_key_press=3,
+)
+print(sendkeycmd)
+
+# output:
+/data/data/com.termux/files/home/sendevent_multicommands_type_text/a.out /dev/input/event1 KEY_LEFTSHIFT:d:0#KEY_T:ud:1#KEY_LEFTSHIFT:u:0#KEY_H:ud:1#KEY_I:ud:1#KEY_S:ud:3#KEY_SPACE:ud:2#KEY_I:ud:1#KEY_S:ud:3#KEY_SPACE:ud:1#KEY_A:ud:1#KEY_SPACE:ud:1#KEY_LEFTSHIFT:d:0#KEY_T:ud:3#KEY_LEFTSHIFT:u:0#KEY_E:ud:2#KEY_S:ud:1#KEY_T:ud:2#KEY_LEFTSHIFT:d:0#KEY_1:ud:3#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_1:ud:1#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_1:ud:3#KEY_LEFTSHIFT:u:0#KEY_SPACE:ud:2#KEY_LEFTSHIFT:d:0#KEY_R:ud:1#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_E:ud:3#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_A:ud:1#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_L:ud:2#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_L:ud:1#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_Y:ud:3#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_1:ud:3#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_1:ud:1#KEY_LEFTSHIFT:u:0#KEY_LEFTSHIFT:d:0#KEY_1:ud:3#KEY_LEFTSHIFT:u:0
+
+```
+
 
 #### Explanation - Token: KEY_H:ud:1 / 35:ud:1
 
